@@ -1,0 +1,122 @@
+
+Mousa@DESKTOP-FFHC81G MINGW64 ~ (master)
+$ cd "C:\Users\Mousa\OneDrive\Desktop\Task2"
+
+Mousa@DESKTOP-FFHC81G MINGW64 ~/OneDrive/Desktop/Task2 (master)
+$ git init
+Initialized empty Git repository in C:/Users/Mousa/OneDrive/Desktop/Task2/.git/
+
+Mousa@DESKTOP-FFHC81G MINGW64 ~/OneDrive/Desktop/Task2 (master)
+$ git remote add origin "https://github.com/MunaA1Git/Task2.git"
+
+Mousa@DESKTOP-FFHC81G MINGW64 ~/OneDrive/Desktop/Task2 (master)
+$ git add chapter1.txt
+
+Mousa@DESKTOP-FFHC81G MINGW64 ~/OneDrive/Desktop/Task2 (master)
+$ git commit -m "Chapter 1: Introduce Git from Init village"
+[master (root-commit) 8205b72] Chapter 1: Introduce Git from Init village
+ 1 file changed, 1 insertion(+)
+ create mode 100644 chapter1.txt
+
+Mousa@DESKTOP-FFHC81G MINGW64 ~/OneDrive/Desktop/Task2 (master)
+$ git add chapter1.txt
+
+Mousa@DESKTOP-FFHC81G MINGW64 ~/OneDrive/Desktop/Task2 (master)
+$ git commit -m "Chapter 1: Extended story"
+[master 9a2b43d] Chapter 1: Extended story
+ 1 file changed, 2 insertions(+)
+
+Mousa@DESKTOP-FFHC81G MINGW64 ~/OneDrive/Desktop/Task2 (master)
+$ git branch chapter2
+
+Mousa@DESKTOP-FFHC81G MINGW64 ~/OneDrive/Desktop/Task2 (master)
+$ git checkout chapter2
+Switched to branch 'chapter2'
+
+Mousa@DESKTOP-FFHC81G MINGW64 ~/OneDrive/Desktop/Task2 (chapter2)
+$ git add chapter2.txt
+
+Mousa@DESKTOP-FFHC81G MINGW64 ~/OneDrive/Desktop/Task2 (chapter2)
+$ git checkout master
+A       chapter2.txt
+Switched to branch 'master'
+
+Mousa@DESKTOP-FFHC81G MINGW64 ~/OneDrive/Desktop/Task2 (master)
+$ git merge chapter2
+Already up to date.
+
+Mousa@DESKTOP-FFHC81G MINGW64 ~/OneDrive/Desktop/Task2 (master)
+$ git commit -m "Chapter 2: Git's decision"
+[master cecc812] Chapter 2: Git's decision
+ 1 file changed, 1 insertion(+)
+ create mode 100644 chapter2.txt
+
+Mousa@DESKTOP-FFHC81G MINGW64 ~/OneDrive/Desktop/Task2 (master)
+$ git branch chapter3
+git checkout chapter3
+Switched to branch 'chapter3'
+
+Mousa@DESKTOP-FFHC81G MINGW64 ~/OneDrive/Desktop/Task2 (chapter3)
+$ git add chapter1.txt
+git commit -m "Chapter 3: Git's First Step into the World of Version Control"
+[chapter3 a172e2d] Chapter 3: Git's First Step into the World of Version Control
+ 1 file changed, 1 insertion(+)
+
+Mousa@DESKTOP-FFHC81G MINGW64 ~/OneDrive/Desktop/Task2 (chapter3)
+$ git checkout master
+Switched to branch 'master'
+
+Mousa@DESKTOP-FFHC81G MINGW64 ~/OneDrive/Desktop/Task2 (master)
+$ git add chapter1.txt
+git commit -m "Chapter 1: Modified the first line"
+[master f615535] Chapter 1: Modified the first line
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+Mousa@DESKTOP-FFHC81G MINGW64 ~/OneDrive/Desktop/Task2 (master)
+$ git merge chapter3
+Auto-merging chapter1.txt
+CONFLICT (content): Merge conflict in chapter1.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+Mousa@DESKTOP-FFHC81G MINGW64 ~/OneDrive/Desktop/Task2 (master|MERGING)
+$ git add chapter1.txt
+
+Mousa@DESKTOP-FFHC81G MINGW64 ~/OneDrive/Desktop/Task2 (master|MERGING)
+$ git commit -m "Resolved merge conflict"
+[master e4a0b80] Resolved merge conflict
+
+Mousa@DESKTOP-FFHC81G MINGW64 ~/OneDrive/Desktop/Task2 (master)
+$ git push origin master
+Enumerating objects: 18, done.
+Counting objects: 100% (18/18), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (16/16), done.
+Writing objects: 100% (18/18), 1.93 KiB | 220.00 KiB/s, done.
+Total 18 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (4/4), done.
+To https://github.com/MunaA1Git/Task2.git
+ * [new branch]      master -> master
+
+Mousa@DESKTOP-FFHC81G MINGW64 ~/OneDrive/Desktop/Task2 (master)
+$ ^C
+
+Mousa@DESKTOP-FFHC81G MINGW64 ~/OneDrive/Desktop/Task2 (master)
+$ git push origin chapter2
+git push origin chapter3
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'chapter2' on GitHub by visiting:
+remote:      https://github.com/MunaA1Git/Task2/pull/new/chapter2
+remote:
+To https://github.com/MunaA1Git/Task2.git
+ * [new branch]      chapter2 -> chapter2
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'chapter3' on GitHub by visiting:
+remote:      https://github.com/MunaA1Git/Task2/pull/new/chapter3
+remote:
+To https://github.com/MunaA1Git/Task2.git
+ * [new branch]      chapter3 -> chapter3
+
+Mousa@DESKTOP-FFHC81G MINGW64 ~/OneDrive/Desktop/Task2 (master)
+$
